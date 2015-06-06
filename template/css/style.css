@@ -16,7 +16,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	vertical-align: basline;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -45,14 +45,15 @@ table {
 /* End of Eric Meyer's CSS Reset */
 
 html {
-	background: url('../i/bg.jpg') center 0;	
+	background: url('../i/bg.jpg') center 0;
 }
 
 body {
-	font: 12px/18px Arial, sans-serif;
+	font: normal normal 14px/1 'PT Sans Narrow', Arial, sans-serif;
 	width: 100%;
 	height: 100%;
-
+	color: #edb27d;
+	background: url('../i/bg-vegetables.png') center 0 no-repeat;
 }
 .clr {
 
@@ -61,11 +62,11 @@ body {
 	content: '';
 	clear: both;
 	display: table;
-	font-size: 0;
+	visibility: hidden;
 
 }
-.wr {
-	width: 960px;
+.wrapper {
+	width: 996px;
 	margin: 0 auto;
 	min-height: 100%;
 	height: auto !important;
@@ -74,35 +75,824 @@ body {
 }
 
 
-a, a:visited {
-	color: #00A6EB;
+a {
+	color: #edb27d;
 }
 
-/* Header
------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family:'NovitoNova-Regular';
+	src: url('../fonts/novitonova/NovitoNova-Regular_gdi.eot');
+	src: url('../fonts/novitonova/NovitoNova-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/novitonova/NovitoNova-Regular_gdi.woff') format('woff'),
+		url('../fonts/novitonova/NovitoNova-Regular_gdi.ttf') format('truetype'),
+		url('../fonts/novitonova/NovitoNova-Regular_gdi.svg#NovitoNova-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-0491;
+}
+
+
+/* Header */
 header {
 	position: relative;
+	margin-bottom: 30px;
 	
 }
 
-.header-logo {
-	
+.b__logo{
+	width: 294px;
+	height: 124px;
+	display: block;
+	margin: 0 auto 12px;
+	padding-top: 60px;
+	position: relative;
+	left: -4px;
+}
+
+.logo__img{
 
 }
 
-.header-slogan {
-	
+.b__mode{
+	font-family:'NovitoNova-Regular';
+	color:#fff;
+	text-transform: uppercase;
+	background: url('../i/bg-mode.png') 0 0 no-repeat;
+	width: 174px;
+	height: 158px;
+	position: absolute;
+	top:99px;
+	left:2px;
+	z-index: -1;
+}
 
+.mode__title,
+.mode__item{
+	text-indent: -9000px;
+}
+.b__phone{
+	color:#fff;
+	font-family:'NovitoNova-Regular';
+	text-transform: uppercase;
+	background: url('../i/bg-phone.png') 0 0 no-repeat;
+	width: 175px;
+	height: 85px;
+	position: absolute;
+	top:170px;
+	right:0;
+	text-indent: -9000px;
+	background-size: cover;
+	transition:all ease-out 0.1s;
+}
+
+.b__phone:hover{
+	transform: rotate(3deg);
 }
 
 
-.header-service{
-	
+.b__soc{
+	color:#dcd39d;
+	font-family:'NovitoNova-Regular', Arial, sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+	background: url('../i/bg-soc.png') 0 0 no-repeat;
+	width: 71px;
+	height: 68px;
+	position: absolute;
+	top:81px;
+	right:62px;
+	background-size: cover;
+	transition:all ease-out 0.1s;
 }
 
+.b__soc:hover{
+	transform: rotate(3deg);
+}
 
+.soc__in{
+	display: inline-block;
+	width: 37px;
+	height: 36px;
+	position: absolute;
+	top: 32px;
+	left: 0;
+}
 
+.soc__vk{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 38px;
+	right: 0;
+}
 
+.b__nav-top{
+	border:dashed 2px #41681a;
+	border-radius: 20px/16px;
+	box-shadow: 0 1px 1px #000;
+	width:614px;
+	margin: 0 auto;
+	padding: 5px 0;
+	text-align: center;
+
+}
+.nav__list {
+	display: inline-block;
+}
+.nav-top__item{
+	float: left;
+	margin: 0 0 0 23px;
+}
+
+.nav-top__item:first-child{
+	margin-left: 0;
+}
+
+.nav-top__link{
+	font-family:'NovitoNova-Regular', Arial, sans-serif;
+	font-size: 34px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-shadow:0 0 2px rgba(0,0,0,.36);
+}
+
+.nav-top__item.active,
+.nav-top__link:hover{
+	color: #62a328;
+}
+
+.b-slider{
+
+}
+
+.slider__list{
+
+}
+
+.slider__item{
+
+}
+
+.slider__link{
+
+}
+
+.slider__img{
+
+}
+
+.slider__item{
+
+}
+
+.slider__link{
+
+}
+
+.slider__img{
+
+}
+
+.slider__item{
+
+}
+
+.slider__link{
+
+}
+
+.slider__img{
+
+}
+
+.slider__item{
+
+}
+
+.slider__link{
+
+}
+
+.slider__img{
+
+}
+
+.b-novelty{
+
+}
+
+.col-md-3{
+
+}
+
+.meal__foto-wr{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__link{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.col-md-3{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.col-md-3{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.col-md-3{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.b-about{
+
+}
+
+.b-meat-order{
+
+}
+
+.meat-group{
+
+}
+
+.col-md-6 col-sm-12{
+
+}
+
+.opt-quontity{
+
+}
+
+.quont-minus{
+
+}
+
+.quont-plus{
+
+}
+
+.meal-wrapper{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.col-md-6 col-sm-12{
+
+}
+
+.opt-quontity{
+
+}
+
+.quont-minus{
+
+}
+
+.quont-plus{
+
+}
+
+.meal-wrapper{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.col-md-6 col-sm-12{
+
+}
+
+.opt-quontity{
+
+}
+
+.quont-minus{
+
+}
+
+.quont-plus{
+
+}
+
+.meal-wrapper{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.col-md-6 col-sm-12{
+
+}
+
+.opt-quontity{
+
+}
+
+.quont-minus{
+
+}
+
+.quont-plus{
+
+}
+
+.meal-wrapper{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.meat-group{
+
+}
+
+.col-md-6 col-sm-12{
+
+}
+
+.opt-quontity{
+
+}
+
+.quont-minus{
+
+}
+
+.quont-plus{
+
+}
+
+.meal-wrapper{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.col-md-6 col-sm-12{
+
+}
+
+.opt-quontity{
+
+}
+
+.quont-minus{
+
+}
+
+.quont-plus{
+
+}
+
+.meal-wrapper{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.col-md-6 col-sm-12{
+
+}
+
+.opt-quontity{
+
+}
+
+.quont-minus{
+
+}
+
+.quont-plus{
+
+}
+
+.meal-wrapper{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.col-md-6 col-sm-12{
+
+}
+
+.opt-quontity{
+
+}
+
+.quont-minus{
+
+}
+
+.quont-plus{
+
+}
+
+.meal-wrapper{
+
+}
+
+.meal__foto{
+
+}
+
+.meal__title{
+
+}
+
+.meal__description{
+
+}
+
+.meal__price{
+
+}
+
+.meal_price-value{
+
+}
+
+.meal_price-currency{
+
+}
+
+.meat__weight{
+
+}
+
+.meat-amount{
+
+}
+
+.meat-amount__value{
+
+}
+
+.meat-amount__currency{
+
+}
+
+.meat-form row{
+
+}
+
+.col-md-6 col-xs-12{
+
+}
+
+.col-md-6 col-xs-6{
+
+}
+
+.col-md-6 col-xs-12{
+
+}
+
+.col-md-6 col-xs-6{
+
+}
+
+.col-md-6 col-xs-12{
+
+}
+
+.col-md-6 col-xs-6{
+
+}
+
+.col-md-6 col-xs-12{
+
+}
+
+.col-md-6 col-xs-6{
+
+}
+
+.col-md-12 col-xs-12{
+
+}
+
+.col-md-6 col-xs-12{
+
+}
+
+.col-md-6 col-xs-6{
+
+}
+
+.f__logo{
+
+}
+
+.f__copy{
+
+}
+
+.f__location{
+
+}
 
 
 
