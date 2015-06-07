@@ -226,8 +226,17 @@ header {
 	color: #62a328;
 }
 
-.b-slider{
 
+
+main {
+	min-height: 170px;
+	padding-bottom: 60px;
+}
+
+.b-slider{
+	box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+	position: relative;
+	margin-bottom: 52px;
 }
 
 .slider__list{
@@ -235,8 +244,14 @@ header {
 }
 
 .slider__item{
-
+	line-height: 0;
+	display: none;
 }
+
+.slider__item:first-child{
+	display: block;
+}
+
 
 .slider__link{
 
@@ -246,185 +261,214 @@ header {
 
 }
 
-.slider__item{
 
+
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
-.slider__link{
-
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
 }
 
-.slider__img{
-
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
 }
 
-.slider__item{
-
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
 }
 
-.slider__link{
-
+.rslides_nav {
+	position: absolute;
+	top:44%;
+	display:block;
+	width: 24px;
+	height: 48px;
+	z-index: 20;
+	background: url('../i/icons-sprite.png') 0 0 no-repeat;
 }
 
-.slider__img{
-
+.rslides_nav.prev{
+	left:0;
+	background-position: -24px 0;
 }
 
-.slider__item{
-
+.rslides_nav.next{
+	right:0;
+	background-position: 0 0;
 }
 
-.slider__link{
-
+.rslides_tabs{
+	position: absolute;
+	bottom: -25px;
+	text-align: center;
+	width: 100%;
+	line-height: 0;
 }
 
-.slider__img{
 
+.rslides_tabs li{
+	display: inline-block;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	text-align: center;
+	margin: 0 3px;
+	border:solid 1px #f0e5af;
+	line-height: 0;
 }
+
+.rslides_tabs li a{
+	text-indent: -9000px;
+	font-size: 0;
+	line-height: 0;
+	display: inline-block;
+	vertical-align: middle;
+	margin:2px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+}
+
+.rslides_here a {
+	background-color: #2b858c;
+}
+
+
+
+
+
+
 
 .b-novelty{
 
 }
 
-.col-md-3{
+.b-novelty img.header{
+	margin-bottom: 24px;
+}
 
+.meal__item{
+	text-align: center;
+	float: left;
+	/*TODO*/
+	width:227px;
+	margin-left: 11px;
+	margin-right: 11px;
+	margin-bottom: 35px;
 }
 
 .meal__foto-wr{
-
+	margin-bottom: 20px;
+	display: block;
 }
 
 .meal__foto{
+	width: 224px;
+	height: 180px;
+	border-radius: 115px 109px / 65px;
+	box-shadow: -2px 5px 16px rgba(0,0,0,.45);
 
 }
 
 .meal__title{
-
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
 }
 
 .meal__link{
-
+	color: #fff;
+	text-decoration: none;
+}
+.meal__link:hover{
+	text-decoration: underline;
 }
 
 .meal__description{
-
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 1px;
+	color: #edb27d;
+	margin-bottom: 10px;
 }
 
 .meal__price{
-
+	letter-spacing: 1px;
+	font-size: 20px;
 }
 
-.meal_price-value{
-
-}
-
+.meal_price-value,
 .meal_price-currency{
-
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 24px;
 }
+
+
 
 .meat__weight{
+	font-size: 14px;
+	color: #edb27d;
+}
+
+
+
+
+
+
+
+
+h1.header,
+h2.header{
+	text-indent: -9000px;
+	text-align: center;
+}
+
+img.header,
+.about-img-1{
+	margin: 0 auto;
+	display: block;
+}
+
+.b-about h1{
 
 }
 
-.col-md-3{
-
+.about__link{
+	margin-top: -63px;
+	display: block;
+	text-align: center;
 }
 
-.meal__foto{
 
-}
 
-.meal__title{
 
-}
 
-.meal__description{
 
-}
 
-.meal__price{
 
-}
-
-.meal_price-value{
-
-}
-
-.meal_price-currency{
-
-}
-
-.meat__weight{
-
-}
-
-.col-md-3{
-
-}
-
-.meal__foto{
-
-}
-
-.meal__title{
-
-}
-
-.meal__description{
-
-}
-
-.meal__price{
-
-}
-
-.meal_price-value{
-
-}
-
-.meal_price-currency{
-
-}
-
-.meat__weight{
-
-}
-
-.col-md-3{
-
-}
-
-.meal__foto{
-
-}
-
-.meal__title{
-
-}
-
-.meal__description{
-
-}
-
-.meal__price{
-
-}
-
-.meal_price-value{
-
-}
-
-.meal_price-currency{
-
-}
-
-.meat__weight{
-
-}
-
-.b-about{
-
-}
 
 .b-meat-order{
 
@@ -882,17 +926,27 @@ header {
 
 }
 
-.f__logo{
-
+footer {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.b__logo-footer{
+	margin-bottom: 20px;
 }
 
-.f__copy{
-
+.b__copyright,
+.b__location,
+.b-footer-phone,
+.b-footer-phone a{
+	font-size: 18px;
+	color: #f0e5af;
+	margin-bottom: 6px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-shadow:0 0 2px rgba(0,0,0,.36);
 }
 
-.f__location{
 
-}
 
 
 
