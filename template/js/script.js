@@ -21,6 +21,8 @@ $(document).ready(function() {
 
 
 
+	$('.b-gallery a').fancybox();
+
 
         $('.quont-minus').click(function () {
             var $input = $(this).parent().find('input');
